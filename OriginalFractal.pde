@@ -12,6 +12,10 @@ public void draw()
 public void myFractal(int x, int y, int r)
 {
  ellipse(x,y,r,r);
+ rect(x+r,y+r,r/2,r/2);
+ rect(x-r,y-r,r/2,r/2);
+ rect(x-r,y+r,r/2,r/2);
+ rect(x+r,y-r,r/2,r/2);
   if (r>25)
   {
     pushMatrix();
